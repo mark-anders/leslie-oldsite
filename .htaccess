@@ -1,0 +1,4 @@
+redirect /webmail https://geta.lunariffic.com:20082/lpcp-webmail/
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
